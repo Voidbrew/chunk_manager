@@ -15,7 +15,6 @@
 
 1. Clone the repository or download the source code.
 2. Place the `ChunkManager.cs` file in your Godot project under the appropriate directory (e.g., `Scripts/`).
-3. Ensure you have the required dependencies, such as `FastNoiseLite`, included in your project.
 
 ## Usage
 
