@@ -38,6 +38,6 @@ public class Player : Node2D
         Vector2 position = this.Position;
 
         // Refresh chunks based on player position
-        ChunkManager.Instance.RefreshChunks();
+        ChunkManager.Instance.RefreshChunks(position);
     }
 }
