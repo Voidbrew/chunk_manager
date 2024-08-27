@@ -6,7 +6,7 @@ using System.Linq;
 /// <summary>
 /// Manages the generation and loading of chunks in a tile-based game world.
 /// </summary>
-public partial class ChunkManager : Node2De2D
+public partial class ChunkManager : Node2D
 {
     /// <summary>
     /// The instance of the ChunkManager.
@@ -91,11 +91,11 @@ public partial class ChunkManager : Node2De2D
     /// <summary>
     /// Refreshes the loaded chunks based on the current camera position.
     /// </summary>
-    public void RefreshChunks()
+    /// <param name="pos">The position to refresh the chunks around.</param>
+    public void RefreshChunks(Vector2 pos)
     {
-        Vector2 position = CameraManager.Instance.Position;
-        LoadChunksAroundPosition(position);
-        UnloadChunksOutsidePosition(position);
+        LoadChunksAroundPosition(pos);
+        UnloadChunksOutsidePosition(pos);
     }
 
     /// <summary>
